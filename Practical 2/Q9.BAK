@@ -1,0 +1,11 @@
+	#include <stdio.h>
+	#include <conio.h>
+
+																																				main()
+	{
+	       char ch ;
+	       printf("Enter character value");
+	       scanf("%c",&ch);
+	       print("Answer = %d",c)			;
+
+	}
