@@ -1,0 +1,37 @@
+<html>
+    <body>
+        <script>
+            var likes = 0,dislikes = 0;
+            function like ()
+            {
+                likes++;
+            }
+
+            function dislike ()
+            {
+                dislikes++;
+            }
+
+            function total()
+            {
+                document.write("Likes = " + likes);
+                document.write("<br>");
+                document.write("Dislikes = " + dislikes);
+            }
+        </script>
+
+        <button onclick="like()">
+            <img src="like.png" alt="Like">
+        </button>
+
+        <button onclick="dislike()">
+            <img src="dislikes.png" alt="Dislike">
+        </button>
+
+        <button onclick="total()">
+            <img src="counter.jpg" alt="total">
+        </button>
+
+    
+    </body>
+</html>

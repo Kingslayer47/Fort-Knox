@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script src=https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.js></script>
+        <script src="AJ-6.js"></script>
+    </head>
+    <body ng-app="myModule">
+        <div ng-controller="dataController">
+            <input type="text" ng-model="search.firstName"/>
+            <input type="text" ng-model="search.lastName"/>
+            
+            <table>
+                
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>Salary</th>
+                </tr>
+                <tr ng-repeat="emp in employeeList | filter: search| orderBy: '-salary'">
+                    <td> {{emp.firstName | lowercase}}</td>
+                    <td>{{emp.lastName | uppercase}}</td>
+                    <td>{{emp.gender}}</td>
+                    <td>{{emp.salary |  currency:"@"}}</td>
+                </tr>
+
+            </table>
+        </div>
+
+    </body>
+</html>

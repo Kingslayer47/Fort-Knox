@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>JavaScript History Object</title>
+        <script type="text/javascript">
+        function funBackward()
+            {
+                 window.history.back()
+            }
+        function funForward()
+            {
+                window.history.forward()
+            }
+        function funGo()
+            {
+                window.history.go(1)
+            }
+        </script>
+    </head>
+
+    <body>
+        <h3>JavaScript History Object Example</h3>
+        <input type="button" id="btgo" value="Go to Next Link" onclick="funGo();">
+        <input type="button" id="btfo" value="Forward" onclick="funForward();">
+        <input type="button" id="btba" value="Backward" onclick="funBackward();">
+    </body>
+    </html>
+    

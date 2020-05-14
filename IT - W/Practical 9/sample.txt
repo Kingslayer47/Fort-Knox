@@ -1,0 +1,3 @@
+header("Access-Control-Allow-Origin: *");
+GUNI is the best place to study.
+GUNI GUNI GUNI

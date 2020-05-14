@@ -1,0 +1,86 @@
+<html>
+    <body>
+
+        <p><h1>Enter the no. for output</h1></p>
+        <img src="1.jpg" alt="no">
+        <br>
+        <br>
+        <img src="2.jpg" alt="no">
+        <br>
+        <br>
+        <p><h1>Output</h1></p>
+        <button onclick="myFunction()">Try it</button>
+        <p id="demo"></p>
+        
+        <script>
+            function myFunction() 
+            {
+               var n1 = prompt("Enter no.");
+               n1 = parseInt(n1);
+
+               switch(n1)
+               {
+                    case 1: var x = "Browser Name: " + navigator.appName;
+                            document.getElementById("demo").innerHTML = x;
+                            break;
+                    
+                    case 2: var x = "Version info: " + navigator.appVersion;
+                            document.getElementById("demo").innerHTML = x;
+                            break;
+                    
+                    case 3: var x = "Browser CodeName: " + navigator.appCodeName;
+                            document.getElementById("demo").innerHTML = x;
+                            break;
+                        
+                    case 4: var x = "Cookies enabled: " + navigator.cookieEnabled;
+                            document.getElementById("demo").innerHTML = x;
+                            break;
+
+                    case 5: var x = "User-agent header sent: " + navigator.userAgent;
+                            document.getElementById("demo").innerHTML = x;
+                            break;
+
+                    case 6: var x = "Language of the browser: " + navigator.language;
+                            document.getElementById("demo").innerHTML = x;
+                            break;
+                    
+                    case 11:var x = "Platform: " + navigator.platform;
+                            document.getElementById("demo").innerHTML = x;
+                            break;
+                        
+                    case 12:var x = "Is the browser online? " + navigator.onLine;
+                            document.getElementById("demo").innerHTML = x;
+                            break;
+
+                    case 24:var x = "Available Height: " + screen.availHeight + "px";
+                            document.getElementById("demo").innerHTML = x;
+                            break;
+
+                    case 23:var x = "Available Width: " + screen.availWidth + "px";
+                            document.getElementById("demo").innerHTML = x;
+                            break;
+
+                    case 21:var x = "Total Width: " + screen.width + "px";
+                            document.getElementById("demo").innerHTML = x;
+                            break;
+
+                    case 22:var x = "Total Height: " + screen.height + "px";
+                            document.getElementById("demo").innerHTML = x;
+                            break;
+
+                    case 25:var x = "Color Depth: " + screen.colorDepth + " bits per pixel";
+                            document.getElementById("demo").innerHTML = x;
+                            break;
+
+                    case 26:var x = "Color resolution: " + screen.pixelDepth + " bits per pixel";
+                            document.getElementById("demo").innerHTML = x;
+                            break;
+
+                    default: var x = "Wrong Input";
+                            document.getElementById("demo").innerHTML = x;
+               }
+            }
+        </script>
+
+    </body>
+</html>
