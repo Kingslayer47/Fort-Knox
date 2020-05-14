@@ -1,0 +1,32 @@
+/* unvisited link */
+a:link
+    {
+        color:black;
+        text-decoration: none;
+    }
+  
+  /* visited link */
+a:visited 
+    {
+        color:blue;
+        text-decoration: none;
+    }
+  
+  /* mouse over link */
+a:hover 
+    {
+        color: red;
+        text-decoration: none;
+    }
+  
+  /* selected link */
+a:active 
+    {
+        color: red;
+        text-decoration: none;
+    }
+
+ul 
+    {
+        list-style-image: url('1.jpg');
+    }
